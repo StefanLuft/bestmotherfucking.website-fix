@@ -1,0 +1,131 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 2em 1em;
+    font-size: 1.1em;
+    line-height: 1.62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    transition: background 0.3s ease;
+}
+
+article {
+    max-width: 42em;
+    padding: 2.5em 3em;
+    border-radius: 24px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-top: 1.5em;
+    font-weight: 800;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    letter-spacing: -0.03em;
+}
+
+aside {
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+dfn {
+    border-bottom: 1px dashed currentColor;
+    cursor: help;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #e0e0e0;
+    }
+
+    article {
+        justify-content: center;
+        align-items: center;
+        background: rgba(20, 20, 20, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    a {
+        color: #4facfe;
+        text-decoration-color: rgba(79, 172, 254, 0.4);
+        transition: all 0.2s;
+    }
+
+    a:hover {
+        color: #00f2fe;
+        text-decoration-color: #00f2fe;
+    }
+
+    code {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        color: #2d3436;
+    }
+
+    article {
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-top: 1px solid rgba(255, 255, 255, 0.8);
+        border-left: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    }
+
+    a {
+        color: #d63031;
+        text-decoration-color: rgba(214, 48, 49, 0.4);
+        transition: all 0.2s;
+    }
+
+    a:hover {
+        color: #ff7675;
+        text-decoration-color: #ff7675;
+    }
+
+    code {
+        background: rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+        border-radius: 16px;
+    }
+    h1 { font-size: 2em; }
+}
